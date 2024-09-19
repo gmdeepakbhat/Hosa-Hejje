@@ -43,21 +43,13 @@ begin
         d[9]=8'b0;
         d[10]=8'b0;
       end
-    else if(address<=10)
+    else
       begin
         case({wr,rd})
-            2'b10: 
-            begin
-            d[address]=data_in;
-            data_out=8'bz;
-            end
+            2'b10: d[address]=data_in;
             2'b01: data_out=d[address];
             default: data_out=8'bz;
         endcase;
-      end
-    else
-      begin
-        data_out=8'bz;
       end
 end
 endmodule
