@@ -1,6 +1,0 @@
-INPUT : rst=0;wr=1;rd=0;address=4'b0100;data_in=8'b00100010;
-INPUT : wr=0;rd=1;address=4'bz;data_in=8'b01001010;
-INPUT : wr=1;rd=0;address=4'b1110;data_in=8'b01001010;
-INPUT : wr=0;rd=1;address=4'b1110;data_in=8'b01001010;
-EXPECTED OUTPUT: data_out= Z
-ACTUAL OUTPUT: data_out= X
